@@ -1,0 +1,19 @@
+<!-- display question you ask your coach as well as his answer. -->
+<h1>Stupid coach</h1>
+<div class="question p-4">
+  <p><%= params[:question]%></p>
+  <p><i>- You</i></p>
+</div>
+
+<div class="answer p-4">
+  <% if params[:question] == 'I am going to work'%>
+    <p>Great</p>
+  <% elsif params[:question].last =='?' %>
+    <p> Silly question, get dressed and go to work!</p>
+  <% else %>
+    <p>I don't care, get dressed and go to work!</p>
+  <% end %>
+  <p><i>- Your coach</i></p>
+</div>
+<%= link_to "Ask a new question!", ask_path %>
+

@@ -1,0 +1,17 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.question {
+  border-left: 5px solid #ccc;
+}
+
+.answer {
+  border-left: 5px solid #ccc;
+  background-color: #FAFAD2;
+  margin: 20px 0;
+}
+
+.asnwer p:first-child{
+  font-weight: bold;
+}
